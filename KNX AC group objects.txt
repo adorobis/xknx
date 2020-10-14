@@ -1,0 +1,45 @@
+Number	Name	Object Function	Description	Group Address	Length	C	R	W	T	U	Data Type	Priority
+0	Control_ On/Off [DPT_1.001]	0-Off;1-On	Asia Control_ On/Off	1/1/0	1 bit	C	-	W	T	-	switch	Low
+1	Control_ Mode [DPT_20.105]	0-Aut;1-Hea;3-Coo;9-Fan;14-Dry	Asia Control_ Mode	2001-01-01	1 byte	C	-	W	T	-	HVAC control mode	Low
+2	Control_ Mode Cool/Heat [DPT_1.100]	0-Cool;1-Heat	Asia Control_ Mode Cool/Heat	2001-01-02	1 bit	C	-	W	T	-	cooling/heating	Low
+3	Control_ Mode Auto [DPT_1.002]	1-Set AUTO mode	Asia Control_ Mode Auto	2001-01-03	1 bit	C	-	W	T	-	boolean	Low
+4	Control_ Mode Heat [DPT_1.002]	1-Set HEAT mode	Asia Control_ Mode Heat	2001-01-04	1 bit	C	-	W	T	-	boolean	Low
+5	Control_ Mode Cool [DPT_1.002]	1-Set COOL mode	Asia Control_ Mode Cool	2001-01-05	1 bit	C	-	W	T	-	boolean	Low
+6	Control_ Mode Fan [DPT_1.002]	1-Set FAN mode	Asia Control_ Mode Fan	2001-01-06	1 bit	C	-	W	T	-	boolean	Low
+7	Control_ Mode Dry [DPT_1.002]	1-Set DRY mode	Asia Control_ Mode Dry	2001-01-07	1 bit	C	-	W	T	-	boolean	Low
+9	Control_ Fan Speed / 4 Speeds [DPT_5.010]	Speed values: 1,2,3,4	Asia Control_ Fan Speed	2001-01-09	1 byte	C	-	W	T	-	counter pulses (0..255)	Low
+10	Control_ Fan Speed / 4 Speeds [DPT_5.001]	Thresholds:38%, 63% and 88%			1 byte	C	-	W	T	-	percentage (0..100%)	Low
+11	Control_ Fan Speed Man/Auto [DPT_1.002]	0-Manual;1-Auto			1 bit	C	-	W	T	-	boolean	Low
+17	Control_ Vanes U-D / 5 Pos [DPT_5.010]	Position values: 1,2,3,4,5			1 byte	C	-	W	T	-	counter pulses (0..255)	Low
+18	Control_ Vanes U-D / 5 Pos [DPT_5.001]	Thresholds:30%,50%,70% y 90%			1 byte	C	-	W	T	-	percentage (0..100%)	Low
+19	Control_ Vanes U-D Man/Auto [DPT_1.002]	0-Manual;1-Auto			1 bit	C	-	W	T	-	boolean	Low
+20	Control_ Vanes U-D Pos 1 [DPT_1.002]	1-Set Position 1			1 bit	C	-	W	T	-	boolean	Low
+21	Control_ Vanes U-D Pos 2 [DPT_1.002]	1-Set Position 2			1 bit	C	-	W	T	-	boolean	Low
+22	Control_ Vanes U-D Pos 3 [DPT_1.002]	1-Set Position 3			1 bit	C	-	W	T	-	boolean	Low
+23	Control_ Vanes U-D Pos 4 [DPT_1.002]	1-Set Position 4			1 bit	C	-	W	T	-	boolean	Low
+24	Control_ Vanes U-D Pos 5 [DPT_1.002]	1-Set Position 5			1 bit	C	-	W	T	-	boolean	Low
+25	Control_ Vanes U-D Swing [DPT_1.002]	0-Off;1-Swing			1 bit	C	-	W	T	-	boolean	Low
+27	Control_ Setpoint Temperature [DPT_9.001]	(ºC)	Asia Control_ Setpoint Temperature	2001-01-27	2 bytes	C	-	W	T	-	temperature (°C)	Low
+46	Status_ On/Off [DPT_1.001]	0-Off;1-On	Asia Status_ On/Off	1/1/46	1 bit	C	R	-	T	-	switch	Low
+47	Status_ Mode [DPT_20.105]	0-Aut;1-Hea;3-Coo;9-Fan;14-Dry	Asia Status_ Mode	1/1/47	1 byte	C	R	-	T	-	HVAC control mode	Low
+48	Status_ Mode Cool/Heat [DPT_1.100]	0-Cool;1-Heat			1 bit	C	R	-	T	-	cooling/heating	Low
+49	Status_ Mode Auto [DPT_1.002]	1-AUTO mode is active			1 bit	C	R	-	T	-	boolean	Low
+50	Status_ Mode Heat [DPT_1.002]	1-HEAT mode is active			1 bit	C	R	-	T	-	boolean	Low
+51	Status_ Mode Cool [DPT_1.002]	1-COOL mode is active			1 bit	C	R	-	T	-	boolean	Low
+52	Status_ Mode Fan [DPT_1.002]	1-FAN mode is active			1 bit	C	R	-	T	-	boolean	Low
+53	Status_ Mode Dry [DPT_1.002]	1-DRY mode is active			1 bit	C	R	-	T	-	boolean	Low
+55	Status_ Fan Speed / 4 Speeds [DPT_5.010]	Speed Values: 1,2,3,4	Asia Status_ Fan Speed	1/1/55	1 byte	C	R	-	T	-	counter pulses (0..255)	Low
+56	Status_ Fan Speed / 4 Speeds [DPT_5.001]	25%, 50%, 75% and 100%			1 byte	C	R	-	T	-	percentage (0..100%)	Low
+57	Status_ Fan Speed Man/Auto [DPT_1.002]	0-Manual;1-Auto			1 bit	C	R	-	T	-	boolean	Low
+63	Status_ Vanes U-D / 5 pos [DPT_5.010]	Position values: 1,2,3,4,5			1 byte	C	R	-	T	-	counter pulses (0..255)	Low
+64	Status_ Vanes U-D / 5 pos [DPT_5.001]	20%, 40, 60%, 80% and 100%			1 byte	C	R	-	T	-	percentage (0..100%)	Low
+65	Status_ Vanes U-D Man/Auto [DPT_1.002]	0-Manual;1-Auto			1 bit	C	R	-	T	-	boolean	Low
+66	Status_ Vanes U-D Pos 1 [DPT_1.002]	1-Vanes in Position 1			1 bit	C	R	-	T	-	boolean	Low
+67	Status_ Vanes U-D Pos 2 [DPT_1.002]	1-Vanes in Position 2			1 bit	C	R	-	T	-	boolean	Low
+68	Status_ Vanes U-D Pos 3 [DPT_1.002]	1-Vanes in Position 3			1 bit	C	R	-	T	-	boolean	Low
+69	Status_ Vanes U-D Pos 4 [DPT_1.002]	1-Vanes in Position 4			1 bit	C	R	-	T	-	boolean	Low
+70	Status_ Vanes U-D Pos 5 [DPT_1.002]	1-Vanes in Position 5			1 bit	C	R	-	T	-	boolean	Low
+71	Status_ Vanes U-D Swing [DPT_1.002]	0-Off;1-Swing			1 bit	C	R	-	T	-	boolean	Low
+73	Status_ AC Setpoint Temperature [DPT_9.001]	(ºC)	Asia Status_ AC Setpoint Temperature	1/1/73	2 bytes	C	R	-	T	-	temperature (°C)	Low
+74	Status_ AC Return Temperature [DPT_9.001]	(ºC)	Asia Status_ AC Return Temperature	1/1/74	2 bytes	C	R	-	T	-	temperature (°C)	Low
+75	Status_ Error/Alarm [DPT_1.005]	0-No alarm;1-Alarm			1 bit	C	R	-	T	-	alarm	Low
